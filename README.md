@@ -36,13 +36,38 @@ Dataset: `smart_grid_dataset.csv` (time-series data including load, time, and po
 | KNN                     | 2.995       | -0.001    | 2.512      |
 
 
-<img width="708" height="380" alt="image" src="https://github.com/user-attachments/assets/1b9c65f5-c53e-46fb-8b7f-7ef102c66a7e" />
-
 
 **Conclusion**:  
 RandomForestRegressor was chosen as the final model due to superior performance across RMSE, R², and MAE, and robustness against overfitting compared to Decision Tree.
 
 ---
+
+
+
+## 🖼️ Plots and Figures
+
+### 1. Model Performance Comparison on Test Set
+
+This figure visually compares the final performance of all four explored models on the unseen test data. Lower values are better for error metrics (RMSE, MAE), and higher values are better for $R^2$.
+
+![Model Performance Comparison on Test Set](results/model_comparison_bar_chart.json)
+
+### 2. Generalization Comparison ($R^2$): Train vs. Test
+
+This plot highlights the critical difference between model performance on the training data (what the model learned) versus the test data (how the model generalizes).
+
+* The **Decision Tree Regressor** exhibits near-perfect performance on the training set ($R^2 \approx 1.0$), but its performance plummets on the test set, indicating severe **overfitting**.
+* The **Random Forest Regressor** maintains a much smaller gap between train and test scores, confirming its **robustness and superior generalization**.
+
+![Generalization Comparison ($R^2$): Train vs. Test](results/r2_generalization_comparison.json)
+
+### 3. Suggested Future Plots (To complete the six figures)
+
+* **Time Series Plot:** Actual Load vs. Predicted Load for a selected 7-day period on the test set.
+* **Anomaly Detection Plot:** A time series plot illustrating the calculated Anomaly Score with the dynamic threshold clearly marked.
+* **Residuals Histogram:** A histogram of the prediction errors (Actual - Predicted) to verify model bias.
+* **Feature Importance Plot:** A bar chart showing the relative importance of engineered time and external features to the final Random Forest prediction.
+
 
 ## 5. Deployment / Future Work
 - Integration into real-time data streams (e.g., Kafka).
