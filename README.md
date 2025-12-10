@@ -126,24 +126,29 @@ This section compares the performance of five classification models in detecting
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/353f5611-97d0-4f21-b4af-7d31a2090052" />
 
 ### Confusion Matrix - RandomForestClassifier (Test Set)
-<img width="600" height="450" alt="Confusion Matrix - RandomForestClassifier" src="https://github.com/user-attachments/assets/6SvMirm4QwQJThWcgjaWp.png" />
+<img width="600" height="500" alt="confusion_matrix_RandomForestClassifier" src="https://github.com/user-attachments/assets/d4995430-aec1-414c-bba7-1da18480aa77" />
+
 
 ### Confusion Matrix - DecisionTreeClassifier (Test Set)
-<img width="600" height="450" alt="Confusion Matrix - DecisionTreeClassifier" src="https://github.com/user-attachments/assets/QZrD72NF84Si4Ry49cw5N.png" />
+<img width="600" height="500" alt="confusion_matrix_DecisionTreeClassifier" src="https://github.com/user-attachments/assets/fc2a4f92-f1d9-4141-a24c-6687f257c1b1" />
+
 
 ### Confusion Matrix - MLPClassifier (Test Set)
-<img width="600" height="450" alt="Confusion Matrix - MLPClassifier" src="https://github.com/user-attachments/assets/TTbf9HwWXwBmidPnPv5xY.png" />
+<img width="600" height="500" alt="confusion_matrix_MLPClassifier" src="https://github.com/user-attachments/assets/ae1eb543-b692-483b-9749-d2299d1819de" />
 
 ### Confusion Matrix - KNN (Test Set)
-<img width="600" height="450" alt="Confusion Matrix - KNN" src="https://github.com/user-attachments/assets/xLA9EH1BD4NfYD2AJpYkx.png" />
+<img width="600" height="500" alt="confusion_matrix_KNN" src="https://github.com/user-attachments/assets/25c38453-29b8-4a6e-94eb-5906ad7bc569" />
+
 
 ### Confusion Matrix - LogisticRegression (Test Set)
-<img width="600" height="450" alt="Confusion Matrix - LogisticRegression" src="https://github.com/user-attachments/assets/x4ZFzvdXokYhufgfDN8FU.png" />
+<img width="600" height="500" alt="confusion_matrix_LogisticRegression" src="https://github.com/user-attachments/assets/078319bb-79d8-4ab7-92cc-332c4bf67326" />
+
 
 ---
 
 ### Classification Performance Comparison (Test Set)
-<img width="800" height="500" alt="Classification Performance Comparison" src="https://github.com/user-attachments/assets/tXkNisSV1yZYo3mwmgN2v.png" />
+<img width="1200" height="600" alt="classification_summary_comparison" src="https://github.com/user-attachments/assets/92eb3576-da08-4993-842b-fe6b2a88ea9c" />
+
 
 ---
 ### 3. Suggested Future Plots (To complete the six figures)
