@@ -65,23 +65,20 @@ RandomForestRegressor was chosen as the final model due to superior performance 
 ## 📈 Visual Comparisons
 
 ### MAE Comparison Across Datasets
-<img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/6914af32-79f2-4dc5-bc66-efa08d4c36b1" />
-
+![MAE Comparison](./images/mae_comparison.png)
 
 ### R² Comparison Across Datasets
-![R² Comparison Across Datasets](./images/r2_comparison.png)
+![R² Comparison](./images/r2_comparison.png)
 
 ### RMSE Comparison Across Datasets
-![RMSE Comparison Across Datasets](./images/rmse_comparison.png)
+![RMSE Comparison](./images/rmse_comparison.png)
 
 ### Validation MAE Comparison
-![Validation MAE Comparison](./images/validation_mae.png)
-
-### Validation R² Comparison
-![Validation R² Comparison](./images/validation_r2.png)
+![Validation MAE](./images/validation_mae.png)
 
 ### Validation RMSE Comparison
-![Validation RMSE Comparison](./images/validation_rmse.png)
+![Validation RMSE](./images/validation_rmse.png)
+
 
 ---
 ### 3. Suggested Future Plots (To complete the six figures)
