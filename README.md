@@ -35,6 +35,10 @@ Dataset: `smart_grid_dataset.csv` (time-series data including load, time, and po
 | DecisionTreeRegressor   | 2.476       | 0.316     | 1.894      |
 | KNN                     | 2.995       | -0.001    | 2.512      |
 
+
+<img width="708" height="380" alt="image" src="https://github.com/user-attachments/assets/1b9c65f5-c53e-46fb-8b7f-7ef102c66a7e" />
+
+
 **Conclusion**:  
 RandomForestRegressor was chosen as the final model due to superior performance across RMSE, R², and MAE, and robustness against overfitting compared to Decision Tree.
 
