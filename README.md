@@ -65,7 +65,8 @@ RandomForestRegressor was chosen as the final model due to superior performance 
 ## 📈 Visual Comparisons
 
 ### MAE Comparison Across Datasets
-[![MAE Comparison](./images/mae_comparison.png)](https://bing.com/th/id/BCEI.ae86dab5-9a7e-428c-aff3-ebaf51e72578.png)
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/b9c36f74-9a74-4e97-bab5-a1bed3d608df" />
+
 
 ### R² Comparison Across Datasets
 [![R² Comparison](./images/r2_comparison.png)](https://bing.com/th/id/BCEI.4183d047-2363-4bac-98ad-82da260eb5d7.png)
