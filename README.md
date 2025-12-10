@@ -8,6 +8,24 @@ This project develops a two-part system for Smart Grids:
 Dataset: `smart_grid_dataset.csv` (time-series data including load, time, and possibly weather/price features).
 
 ---
+# 📊 Regression Model Comparison
+
+This repository presents a comparative analysis of several regression models applied to a dataset, evaluating their performance across **Train**, **Validation**, and **Test** sets using three key metrics:
+
+- **RMSE** (Root Mean Square Error)
+- **MAE** (Mean Absolute Error)
+- **R²** (Coefficient of Determination)
+
+---
+
+## 🚀 Models Evaluated
+- RandomForestRegressor
+- DecisionTreeRegressor
+- MLPRegressor
+- KNN
+- LinearRegression (Train only)
+
+---
 
 ## 2. Methodology
 ### Load Prediction
@@ -44,23 +62,27 @@ RandomForestRegressor was chosen as the final model due to superior performance 
 
 
 
-## 🖼️ Plots and Figures
+## 📈 Visual Comparisons
 
-### 1. Model Performance Comparison on Test Set
+### MAE Comparison Across Datasets
+![MAE Comparison Across Datasets](./images/mae_comparison.png)
 
-This figure visually compares the final performance of all four explored models on the unseen test data. Lower values are better for error metrics (RMSE, MAE), and higher values are better for $R^2$.
+### R² Comparison Across Datasets
+![R² Comparison Across Datasets](./images/r2_comparison.png)
 
-![Model Performance Comparison on Test Set](results/model_comparison_bar_chart.json)
+### RMSE Comparison Across Datasets
+![RMSE Comparison Across Datasets](./images/rmse_comparison.png)
 
-### 2. Generalization Comparison ($R^2$): Train vs. Test
+### Validation MAE Comparison
+![Validation MAE Comparison](./images/validation_mae.png)
 
-This plot highlights the critical difference between model performance on the training data (what the model learned) versus the test data (how the model generalizes).
+### Validation R² Comparison
+![Validation R² Comparison](./images/validation_r2.png)
 
-* The **Decision Tree Regressor** exhibits near-perfect performance on the training set ($R^2 \approx 1.0$), but its performance plummets on the test set, indicating severe **overfitting**.
-* The **Random Forest Regressor** maintains a much smaller gap between train and test scores, confirming its **robustness and superior generalization**.
+### Validation RMSE Comparison
+![Validation RMSE Comparison](./images/validation_rmse.png)
 
-![Generalization Comparison ($R^2$): Train vs. Test](results/r2_generalization_comparison.json)
-
+---
 ### 3. Suggested Future Plots (To complete the six figures)
 
 * **Time Series Plot:** Actual Load vs. Predicted Load for a selected 7-day period on the test set.
@@ -68,7 +90,16 @@ This plot highlights the critical difference between model performance on the tr
 * **Residuals Histogram:** A histogram of the prediction errors (Actual - Predicted) to verify model bias.
 * **Feature Importance Plot:** A bar chart showing the relative importance of engineered time and external features to the final Random Forest prediction.
 
+---
+## 🧠 Insights
 
+- 🌲 **RandomForestRegressor** shows strong generalization with high R² and low error across all datasets.
+- 📉 **DecisionTreeRegressor** overfits the training data (perfect R²) but performs poorly on validation and test sets.
+- 🧠 **MLPRegressor** maintains consistent performance across datasets, indicating good generalization.
+- ⚠️ **KNN** struggles with generalization, showing high error and low R², especially on validation and test sets.
+
+  ---
+  
 ## 5. Deployment / Future Work
 - Integration into real-time data streams (e.g., Kafka).
 - Hyperparameter tuning of Random Forest.
